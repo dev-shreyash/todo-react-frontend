@@ -90,7 +90,7 @@ p{
 
 .todo-input {
   padding: 14px 32px 14px 16px;
-  border-radius: 4px 0 0 4px;
+  border-radius: 10px 0 0 4px;
   border: 2px solid #4000c0;
   outline: none;
   max-width: 320px;
@@ -103,9 +103,10 @@ p{
 }
 
 .todo-button {
+  font-weight: 600;
   padding: 16px;
   border: none;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 6px 6px 0;
   cursor: pointer;
   outline: none;
   background: linear-gradient(
@@ -116,7 +117,13 @@ p{
   color: #fff;
   text-transform: capitalize;
 }
-
+.todo-button:hover{
+  background: linear-gradient(
+    90deg,
+    rgb(72, 9, 155) 0%,
+    rgba(128, 0, 163, 0.664) 100%
+  );
+}
 .todo-input.edit {
   border: 2px solid #149fff;
 }
@@ -180,12 +187,24 @@ p{
     rgba(17, 122, 255, 1) 100%
   );
 }
+.todo-row:hover{
+  scale: 0.98;
+  transition: ease-in-out;
+}
+.delete-icon:hover{
+  color: #000000;
+}
+.edit-icon:hover{
+  color: #00ff00;
+}
+
 
 .icons {
   display: flex;
   align-items: center;
   font-size: 24px;
   cursor: pointer;
+  
 }
 
 .delete-icon {
@@ -194,5 +213,6 @@ p{
 }
 
 .edit-icon {
+  margin-right: 8px;
   color: #fff;
 }
