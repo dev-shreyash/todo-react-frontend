@@ -15,7 +15,25 @@ body {
   background-repeat: no-repeat;
   animation: waveAnimation 5s ease infinite alternate;
 }
-
+@media screen and (max-width: 720px) {
+  body {
+    background-size: auto;
+  }
+  .details h1, p{
+  font-size: 10px;
+  }
+  span{
+    font-size: 13px !important;
+  }
+}
+@keyframes waveAnimation {
+  0% {
+    background-position: 0% center; 
+  }
+  100% {
+    background-position: 100% center; 
+  }
+}
 
 .todo-app {
   display: flex;
