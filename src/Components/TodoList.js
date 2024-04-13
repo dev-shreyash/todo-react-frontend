@@ -25,7 +25,7 @@ function TodoList() {
     if (!todo.text || /^\s*$/.test(todo.text)) {
       return;
     }
-    setTodos([...todos, todo]);
+    setTodos([todo, ...todos]);
   };
 
   const updateTodos = (todoId, newValue) => {
