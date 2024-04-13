@@ -20,4 +20,4 @@ This is a simple Todo application built using React. The application allows user
 - **React Components**: Various React components are used to create a modular and reusable user interface.
 
 ## Hosting
-The project was deployed on firebase, which offers free hosting for static sites. 
+The project was deployed on netlify, which offers free hosting for static sites. 
