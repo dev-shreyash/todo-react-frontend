@@ -22,6 +22,9 @@ body {
   .details h1, p{
   font-size: 10px;
   }
+  .details{
+    position: relative;
+  }
   span{
     font-size: 13px !important;
   }
