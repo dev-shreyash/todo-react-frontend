@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TodoForm from './TodoForm.js';
 import { RiCloseCircleLine } from 'react-icons/ri';
+import { MdDelete } from "react-icons/md";
 import { TiEdit } from 'react-icons/ti';
 
 function Todo({ todos, completeTodo, removeTodo, updateTodos }) {
@@ -35,7 +36,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodos }) {
           className='edit-icon'
         />
         
-        <RiCloseCircleLine
+        <<MdDelete
           onClick={() => removeTodo(todo.id)}
           className='delete-icon'
         />
