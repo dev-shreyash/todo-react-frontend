@@ -36,7 +36,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodos }) {
           className='edit-icon'
         />
         
-        <<MdDelete
+        <MdDelete
           onClick={() => removeTodo(todo.id)}
           className='delete-icon'
         />
